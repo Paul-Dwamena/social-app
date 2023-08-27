@@ -34,7 +34,7 @@ schema_view = get_schema_view(
 
 
 urlpatterns = [
-    # path('api/v1/', include("socialapp.urls")),
+    path('api/v1/', include("socialapp.urls")),
     path('api/v1/', include("authentication.urls")),
     path('admin/', admin.site.urls),
     path('swagger/<format>/', schema_view.without_ui(cache_timeout=0),
